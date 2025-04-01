@@ -638,11 +638,9 @@ class FileTransfer: Reactor.Component {
     }
 }
 
-function initializeFileTransfer() 
-{
-  $(#file-transfer-wrapper).content(<FileTransfer />);
+function initializeFileTransfer() {
+  $(#file-transfer-wrapper).style.set { display: "none" };
   $(#video-wrapper).style.set { visibility: "hidden", position: "absolute" };
-  $(#file-transfer-wrapper).style.set { display: "block" };
 }
 
 handler.updateFolderFiles = function(fd) {
