@@ -616,9 +616,9 @@ class FolderView : Reactor.Component {
     }
 
     function pushHistory() {
-      var path = this.fd.path;
-      if (!path) return;
-      if (path != this.history[this.history.length - 1]) this.history.push(path);
+      //var path = this.fd.path;
+      //if (!path) return;
+      //if (path != this.history[this.history.length - 1]) this.history.push(path);
     }
 }
 
